@@ -1,0 +1,8 @@
+{
+  "name": "realschool-portfolios-secure",
+  "version": "1.0.0",
+  "description": "Secure REAL School learning portfolios",
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+}

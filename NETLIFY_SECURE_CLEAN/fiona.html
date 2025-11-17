@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fiona's Portfolio - REAL School</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: system-ui; margin: 0; padding: 20px; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { color: #667eea; }
+        .loading { text-align: center; padding: 40px; color: #666; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌟 Fiona's Learning Journey</h1>
+        <div id="portfolio" class="loading">Loading experiences...</div>
+    </div>
+    
+    <script src="realschool-portfolio-loader-secure.js"></script>
+    <script>
+        // NO TOKEN HERE! Netlify Function handles authentication securely
+        const portfolio = new RealSchoolPortfolioLoader({ studentName: 'Fiona' });
+        portfolio.init().then(() => console.log('✅ Fiona portfolio loaded'));
+    </script>
+</body>
+</html>
